@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/venturi_usa/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/venturi_usa/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/venturi_usa/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
-    vendor/samsung/venturi_usa/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin
+    vendor/samsung/venturi_usa/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
+    vendor/samsung/venturi_usa/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin
 
 #
 # Display (3D)
@@ -68,7 +69,15 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/venturi_usa/proprietary/bin/BCM4329B1_002.002.023.0589.0649.hcd:system/bin/BCM4329B1_002.002.023.0589.0649.hcd
+    vendor/samsung/venturi_usa/proprietary/bin/BCM4329B1_002.002.023.0589.0649.hcd:system/bin/BCM4329B1_002.002.023.0589.0649.hcd \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/audio.conf:system/etc/bluetooth/audio.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/blacklist.conf:system/etc/bluetooth/blacklist.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/input.conf:system/etc/bluetooth/input.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/bluetooth/network.conf:system/etc/bluetooth/network.conf \
+    vendor/samsung/venturi_usa/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
+    vendor/samsung/venturi_usa/proprietary/etc/ppp/ip-down-vpn:system/etc/ppp/ip-down-vpn \
 
 #
 # Camera
@@ -152,3 +161,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/venturi_usa/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/venturi_usa/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
 
+PRODUCT_COPY_FILES += \
+    vendor/samsung/venturi_usa/proprietary/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
+    vendor/samsung/venturi_usa/proprietary/etc/permissions/seccamera.xml:system/etc/permissions/seccamera.xml \
+    vendor/samsung/venturi_usa/proprietary/etc/permissions/sec_feature.xml:system/etc/permissions/secfeature.xml \
+    vendor/samsung/venturi_usa/proprietary/etc/permissions/sec_hardware_library.xml:system/etc/permissions/sec_hardware_library.xml \
+    vendor/samsung/venturi_usa/proprietary/etc/permissions/touchwix.xml:system/etc/permissions/touchwiz.xml \
+    vendor/samsung/venturi_usa/proprietary/bin/badblocks:system/bin/badblocks \
+    vendor/samsung/venturi_usa/proprietary/bin/amix:system/bin/amix \
+    vendor/samsung/venturi_usa/proprietary/bin/aplay:system/bin/aplay \
+    vendor/samsung/venturi_usa/proprietary/bin/applypatch:system/bin/applypatch \
+    vendor/samsung/venturi_usa/proprietary/bin/arec:system/bin/arec \
+    vendor/samsung/venturi_usa/proprietary/usr/bluetooth/:system/usr/bluetooth/
